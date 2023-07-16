@@ -15,13 +15,16 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
+#actualizamos nuevamente con el comando 
+sudo apt-get update
+
 #Instale Docker Engine, container Docker Compose
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 #Verifique que la instalación de Docker Engine
 sudo docker run hello-world
 
-#Comando para comenzar docker 
+#Comando para comenzar docker en digital ocean
 systemctl start docker
 
 #Comando para dar permisos al root

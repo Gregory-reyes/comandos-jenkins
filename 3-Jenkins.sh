@@ -7,11 +7,11 @@ mkdir -p jenkins/jenkins_home
 #Creacion de permisos
 chmod 1000 jenkins
 
-#crear el docker-compose primero ingresado al archivo con: cd jenkins
-vi docker-compose.yml
+#primero ingresado al archivo con: cd jenkins
+cd jenkins
 
-#Iniciarlo con docker-compose
-docker-compose up -d
+#crear el docker-compose 
+vi docker-compose.yml
 
 #Establece servicio se guarda al final ESC y luego :wq! para guardar
 version: '3'

@@ -34,6 +34,4 @@ docker exec -ti jenkins bash
 #Prueba script en terminal Primero ingresamos a: cd opt
 ./script_prueba.sh
 
-
-
-#Creación de un nuevo job en Jenkins
+#Creación de un nuevo job con booleano en Jenkins
