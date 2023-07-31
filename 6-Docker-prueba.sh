@@ -51,7 +51,7 @@ docker images | grep docker
 #recreamos el contenenor de jenkins con el siguiente comando
 docker-compose up -d
 
-#entramos al contenedor 
+#entramos al contenedor jenkins
 docker exec -ti jenkins bash
 
 # damos unos permisos para que pueda ejecutar el docker
