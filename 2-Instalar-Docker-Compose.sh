@@ -6,7 +6,7 @@ curl -SL https://github.com/docker/compose/releases/download/v2.19.1/docker-comp
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 #Aplicar permisos al ejecutable
-sudo chmod +x /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
 
 #Comprobar funcionamiento de docker-compose
 docker-compose --version

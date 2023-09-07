@@ -24,9 +24,24 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 #Verifique que la instalación de Docker Engine
 sudo docker run hello-world
 
-#Comando para comenzar docker en digital ocean
-systemctl start docker
+#Comando para dar permisos al usuario https://docs.docker.com/engine/install/linux-postinstall/
+sudo usermod -aG docker $USER
 
-#Comando para dar permisos al root
-sudo usermod -aG docker root
+#creación de fichero de configuración https://docs.docker.com/config/containers/logging/json-file/
+sudo nano /etc/docker/daemon.json
+
+#pegamos la rotacion de los logs 
+{
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3" 
+  }
+}
+
+#Comando para reiniciar el ubuntu
+sudo systemctl reboot
+
+
+
 
