@@ -11,7 +11,7 @@ chmod 1000 jenkins
 cd jenkins
 
 #crear el docker-compose 
-vi docker-compose.yml
+nano docker-compose.yml
 
 #Establece servicio se guarda al final ESC y luego :wq! para guardar
 version: '3'
